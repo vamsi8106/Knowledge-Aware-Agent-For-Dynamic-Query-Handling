@@ -40,3 +40,4 @@ def recall_tool(key: str) -> str:
     uid = current_user_id_ctx.get()
     val = PROFILE_STORE.get_profile(uid).get(key)
     return val if val is not None else f"No value saved for '{key}'."
+
