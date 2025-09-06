@@ -1,0 +1,21 @@
+version: "3.9"
+services:
+  qdrant:
+    image: qdrant/qdrant:v1.9.1
+    ports: ["6333:6333", "6334:6334"]
+    volumes:
+      - qdrant_storage:/qdrant/storage
+  postgres:
+    image: postgres:16
+    environment:
+      POSTGRES_USER: chinook_user
+      POSTGRES_PASSWORD: chinook_pass
+      POSTGRES_DB: chinook_db
+    ports: ["5432:5432"]
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+      # Optionally mount an init SQL to load Chinook here:
+      # - ./init/chinook.sql:/docker-entrypoint-initdb.d/chinook.sql:ro
+volumes:
+  qdrant_storage:
+  pgdata:

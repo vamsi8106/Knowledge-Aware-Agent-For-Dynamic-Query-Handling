@@ -1,0 +1,30 @@
+fastapi==0.112.2
+uvicorn[standard]==0.30.6
+pydantic==2.9.1
+pydantic-settings==2.5.2
+
+langchain==0.3.7
+langchain-community==0.3.7
+langgraph==0.2.39
+langsmith==0.2.7
+qdrant-client==1.11.3
+sentence-transformers==3.0.1
+qdrant-client==1.11.3
+
+# If you want the non-deprecated Tavily wrapper (optional):
+# langchain-tavily==0.1.1
+
+# Models / LLM backends
+langchain-openai==0.2.6
+langchain-ollama==0.2.2
+
+# SQL & Postgres
+psycopg2-binary==2.9.9
+
+# PDF/DOCX loaders
+pypdf==4.3.1
+docx2txt==0.8
+
+# Testing
+pytest==8.3.2
+httpx==0.27.2
