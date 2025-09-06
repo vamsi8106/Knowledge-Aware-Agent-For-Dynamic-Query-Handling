@@ -219,7 +219,8 @@ curl -s "$BASE_URL/memory/$USER_ID"
 
 ## License
 
-This project is licensed under the [MIT License](LICENSE).
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
 
 
 
